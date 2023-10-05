@@ -1,7 +1,6 @@
 <?php
 include("config.php");
-
-$query = $connect->query("SELECT * FROM sql-fruits");
+$query = $connect->query("SELECT * FROM fruits");
 ?>
 
 <table border="1">
@@ -11,7 +10,7 @@ $query = $connect->query("SELECT * FROM sql-fruits");
   </tr>
   <?php
   $no = 1;
-  while($row = $query-> fetch_assoc()){
+  while($row = $query->fetch_assoc()){
     echo "<tr>
       <td>$no</td>
       <td>{$row['name']}</td>
