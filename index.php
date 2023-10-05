@@ -12,7 +12,7 @@ $query = $connect->query("SELECT * FROM sql-fruits");
   <?php
   $no = 1;
   while($row = $query-> fetch_assoc()){
-    echo = "<tr>
+    echo "<tr>
       <td>$no</td>
       <td>{$row['name']}</td>
     </tr>";
