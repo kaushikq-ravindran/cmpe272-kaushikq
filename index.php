@@ -1,5 +1,6 @@
 <?php
 include("config.php");
+
 $query = $connect->query("SELECT * FROM sql-fruits");
 ?>
 
@@ -13,7 +14,7 @@ $query = $connect->query("SELECT * FROM sql-fruits");
   while($row = $query-> fetch_assoc()){
     echo = "<tr>
       <td>$no</td>
-      <td{$row['name']}></td>
+      <td>{$row['name']}</td>
     </tr>";
     $no++;
    }  
